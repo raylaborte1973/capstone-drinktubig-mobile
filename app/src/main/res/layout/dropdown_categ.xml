@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/Margin8"
+    android:paddingBottom="@dimen/Margin8"
+    android:paddingStart="@dimen/Margin16"
+    android:paddingEnd="@dimen/Margin8"
+    android:text="All"
+    android:textSize="@dimen/Text18"
+    android:textColor="@color/purple_200"/>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.Home">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Margin380"
+        android:background="@drawable/corner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/Margin220"
+            android:layout_height="@dimen/Margin220"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/Margin26"
+            android:layout_marginEnd="@dimen/Margin26"
+            android:background="@drawable/profile_border"
+            android:padding="2dp"
+            android:src="@drawable/gradpic" />
+
+        <LinearLayout
+            android:id="@+id/welcomeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/Margin26"
+            android:layout_marginTop="@dimen/Margin26"
+            android:orientation="horizontal"
+            tools:ignore="RelativeOverlap">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="@string/welcome"
+                android:textColor="@color/white"
+                android:textSize="@dimen/Text22" />
+
+            <TextView
+                android:id="@+id/homeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/purple_200"
+                android:textSize="@dimen/Text24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kama"
+                android:textColor="@color/purple_200"
+                android:textSize="@dimen/Text22" />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/Margin70"
+        android:background="@drawable/home_bckground"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:rowCount="2"
+        android:rowOrderPreserved="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/OrdersBtn"
+            android:layout_width="@dimen/Margin180"
+            android:layout_height="@dimen/Margin130"
+            android:layout_marginEnd="@dimen/Margin2"
+            android:layout_marginBottom="@dimen/Margin2"
+            android:padding="@dimen/Margin2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <!-- Media -->
+                <ImageView
+                    android:layout_width="@dimen/Margin44"
+                    android:layout_height="@dimen/Margin44"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_orders" />
+
+                <TextView
+                    android:id="@+id/orderLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="@string/orders"
+                    android:textColor="@color/purple_200"
+                    android:textSize="@dimen/Text18" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/StoresBtn"
+            android:layout_width="@dimen/Margin180"
+            android:layout_height="@dimen/Margin130"
+            android:layout_marginStart="@dimen/Margin2"
+            android:layout_marginBottom="@dimen/Margin2"
+            android:padding="@dimen/Margin2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <!-- Media -->
+                <ImageView
+                    android:layout_width="@dimen/Margin44"
+                    android:layout_height="@dimen/Margin44"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_store" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="@string/stores"
+                    android:textColor="@color/purple_200"
+                    android:textSize="@dimen/Text18" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/transactionsBtn"
+            android:layout_width="@dimen/Margin180"
+            android:layout_height="@dimen/Margin130"
+            android:layout_marginEnd="@dimen/Margin2"
+            android:layout_marginTop="@dimen/Margin2"
+            android:padding="@dimen/Margin2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <!-- Media -->
+                <ImageView
+                    android:layout_width="@dimen/Margin44"
+                    android:layout_height="@dimen/Margin44"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_book" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="@string/transactions"
+                    android:textColor="@color/purple_200"
+                    android:textSize="@dimen/Text18" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/historyBtn"
+            android:layout_width="@dimen/Margin180"
+            android:layout_height="@dimen/Margin130"
+            android:layout_marginStart="@dimen/Margin2"
+            android:layout_marginTop="@dimen/Margin2"
+            android:padding="@dimen/Margin2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <!-- Media -->
+                <ImageView
+                    android:layout_width="@dimen/Margin44"
+                    android:layout_height="@dimen/Margin44"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_history" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="@string/history"
+                    android:textColor="@color/purple_200"
+                    android:textSize="@dimen/Text18" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

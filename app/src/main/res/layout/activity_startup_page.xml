@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartupPage">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/design"
+        android:orientation="vertical" />
+
+    <ImageView
+        android:layout_width="@dimen/Margin380"
+        android:layout_height="@dimen/Margin380"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="TODO" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Margin130"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="@dimen/Margin30"
+        android:layout_marginBottom="@dimen/Margin50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/Margin70"
+            android:layout_weight="1"
+            android:backgroundTint="#1883f6"
+            android:textSize="@dimen/Text16"
+            android:text="Sign-in"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/Text16"
+            android:text="or"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/Margin70"
+            android:layout_weight="1"
+            android:textSize="@dimen/Text16"
+            android:text="Sign-up"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

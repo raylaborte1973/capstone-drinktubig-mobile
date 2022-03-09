@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/storeName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/Margin70"
+                android:background="@drawable/corner"
+                android:gravity="center"
+                android:text="Drink Tubig"
+                android:textColor="@color/white"
+                android:textSize="@dimen/Text24" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/storeName"
+                android:padding="@dimen/Margin16">
+
+                <TextView
+                    android:id="@+id/prodName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/Margin2"
+                    android:text="Product Name"
+                    android:textColor="@color/purple_200"
+                    android:textSize="@dimen/Text20" />
+
+                <TextView
+                    android:id="@+id/prodPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/prodQuantity"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="@dimen/Margin36"
+                    android:text="P50.00"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="@dimen/Text22" />
+
+                <TextView
+                    android:id="@+id/prodCateg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prodName"
+                    android:layout_marginTop="@dimen/Margin8"
+                    android:text="Product Categ"
+                    android:textSize="@dimen/Text16" />
+
+                <TextView
+                    android:id="@+id/quantityText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prodCateg"
+                    android:layout_marginTop="@dimen/Margin24"
+                    android:text="Quantity:"
+                    android:textSize="@dimen/Text16" />
+
+
+                <EditText
+                    android:id="@+id/prodQuantity"
+                    android:layout_width="@dimen/Margin100"
+                    android:layout_height="@dimen/Margin50"
+                    android:layout_below="@+id/prodCateg"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/Margin24"
+                    android:gravity="center"
+                    android:text="1"
+                    android:inputType="number"
+                    android:textSize="@dimen/Text16" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

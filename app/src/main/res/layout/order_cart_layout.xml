@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/Margin8"
+        android:layout_marginEnd="@dimen/Margin8">
+
+        <TextView
+            android:id="@+id/cartProdName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/Margin8"
+            android:layout_marginTop="@dimen/Margin10"
+            android:text="Product Name"
+            android:textColor="@color/purple_200"
+            android:textSize="@dimen/Text18" />
+
+        <TextView
+            android:id="@+id/cartProdCateg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cartProdName"
+            android:layout_marginStart="@dimen/Margin8"
+            android:layout_marginBottom="@dimen/Margin10"
+            android:text="product Categ"
+            android:textSize="@dimen/Text12" />
+
+        <LinearLayout
+            android:id="@+id/cartQuantityLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Margin10"
+            android:layout_marginEnd="@dimen/Margin36"
+            android:layout_marginBottom="@dimen/Margin10"
+            android:layout_toStartOf="@+id/cartProdTotalPriceLayout"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cartProdQuantlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Qty"
+                android:textSize="@dimen/Text14" />
+
+            <TextView
+                android:id="@+id/cartProdQuant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5pcs."
+                android:textColor="@color/black"
+                android:textSize="@dimen/Text16" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cartProdPriceLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/cartQuantityLayout"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/Margin36"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cartProdPriceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textSize="@dimen/Text14" />
+
+            <TextView
+                android:id="@+id/cartProdPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P15.00"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/Text16" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/Margin50"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/Margin80"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:id="@+id/cartProdTotalPriceLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/Margin10"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cartProdTotalPriceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textSize="@dimen/Text14" />
+
+            <TextView
+                android:id="@+id/cartProdTotalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P15.00"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="@dimen/Text16" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+<!--    Home Dimensions-->
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">12sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">12sp</dimen>
+
+    <dimen name="Text32">32sp</dimen>
+    <dimen name="Text24">24sp</dimen>
+    <dimen name="Text22">22sp</dimen>
+    <dimen name="Text20">20sp</dimen>
+    <dimen name="Text18">18sp</dimen>
+    <dimen name="Text16">16sp</dimen>
+    <dimen name="Text14">14sp</dimen>
+    <dimen name="Text12">12sp</dimen>
+    <dimen name="Text8">8sp</dimen>
+
+    <dimen name="Margin380">380dp</dimen>
+    <dimen name="Margin300">300dp</dimen>
+    <dimen name="Margin250">250dp</dimen>
+    <dimen name="Margin220">220dp</dimen>
+    <dimen name="Margin200">200dp</dimen>
+    <dimen name="Margin180">180dp</dimen>
+    <dimen name="Margin130">130dp</dimen>
+    <dimen name="Margin100">100dp</dimen>
+    <dimen name="Margin80">80dp</dimen>
+    <dimen name="Margin70">70dp</dimen>
+    <dimen name="Margin50">50dp</dimen>
+    <dimen name="Margin44">44dp</dimen>
+    <dimen name="Margin36">36dp</dimen>
+    <dimen name="Margin30">30dp</dimen>
+    <dimen name="Margin26">26dp</dimen>
+    <dimen name="Margin24">24dp</dimen>
+    <dimen name="Margin20">20dp</dimen>
+    <dimen name="Margin16">16dp</dimen>
+    <dimen name="Margin10">10dp</dimen>
+    <dimen name="Margin8">8dp</dimen>
+    <dimen name="Margin4">4dp</dimen>
+    <dimen name="Margin2">2dp</dimen>
+
+
+
+
+</resources>

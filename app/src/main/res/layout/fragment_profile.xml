@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.Home">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Margin220"
+        android:background="@drawable/design">
+
+        <LinearLayout
+            android:layout_width="@dimen/Margin380"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/Margin130"
+                android:layout_height="@dimen/Margin130"
+                android:background="@drawable/profile_border"
+                android:padding="2dp"
+                android:src="@drawable/gradpic" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/Margin8"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/profName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/Margin8"
+                    android:text="@string/Fullname"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/Text22"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/profAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Address"
+                    android:textColor="#ededed"
+                    android:textSize="@dimen/Text14" />
+
+                <TextView
+                    android:id="@+id/profEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Email"
+                    android:textColor="#ededed"
+                    android:textSize="@dimen/Text14" />
+
+                <TextView
+                    android:id="@+id/profNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Number"
+                    android:textColor="#ededed"
+                    android:textSize="@dimen/Text14" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/profUpdateProf"
+        android:layout_width="@dimen/Margin250"
+        android:layout_height="@dimen/Margin44"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btncurve"
+        android:layout_marginTop="@dimen/Margin36"
+        android:text="@string/update_profile"/>
+
+    <Button
+        android:id="@+id/profLogout"
+        android:layout_width="@dimen/Margin250"
+        android:layout_height="@dimen/Margin44"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btncurve"
+        android:layout_marginTop="@dimen/Margin24"
+        android:text="@string/Logout"/>
+
+</LinearLayout>

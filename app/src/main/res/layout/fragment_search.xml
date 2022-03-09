@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.order.Order">
+
+    <LinearLayout
+        android:id="@+id/searchFieldLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Margin50"
+        android:orientation="horizontal"
+        android:background="@color/purple_500">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/Margin8"
+            android:text="Quick Search"
+            android:textSize="@dimen/Text20"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/searchField"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/Margin10"
+            android:layout_marginEnd="@dimen/Margin10"
+            android:textColor="@color/white"
+            android:hint="Search..."
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/searchIcon"
+            android:padding="@dimen/Margin10"
+            android:layout_width="@dimen/Margin50"
+            android:layout_height="@dimen/Margin50"
+            android:src="@drawable/ic_search"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/orderSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchFieldLayout"
+        android:layout_marginTop="-1dp"
+        android:paddingTop="@dimen/Margin10" />
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">DrinkTubig</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_locator">Locator</string>
+    <string name="title_profile">Profile</string>
+
+    <!--    Mapbox API Token-->
+    <!--    <string name="mapbox_access_token">pk.eyJ1Ijoic2toeWxlciIsImEiOiJja3E3dWFlM2UwOXBrMndtdndmaWh0MzF2In0.jums2WWQFieV9W0AL6dP8Q</string>-->
+
+    <string name="mapbox_access_token">pk.eyJ1Ijoiam9obmFkb2xmbzEyMyIsImEiOiJja3Rndmg4dTAwbTZ1MnZxanNnbWFlNmYyIn0.S5Yvs93s5djIr8y5spdYWA</string>
+    <!--    Login Strings-->
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="Login">Login</string>
+    <string name="Sign_Up">Sign Up</string>
+    <string name="Keep_Sign_In">Remember me</string>
+    <string name="Forgot_Password">Forgot Password?</string>
+    <string name="No_Account">Don\'t have an account?</string>
+
+    <!--    Registration Strings-->
+    <string name="Login_Here">Login here</string>
+    <string name="Password2">Confirm Password</string>
+    <string name="Fullname">Full Name</string>
+    <string name="Register">Register</string>
+    <string name="Number">Contact No.</string>
+    <string name="Address">Address</string>
+    <string name="Information">Personal Information</string>
+    <string name="Header">Let\'s Get Started!</string>
+    <string name="Create_Account">Create an account now!</string>
+    <string name="Have_Account">Already have an account?</string>
+
+    <!--    Home Strings-->
+    <string name="welcome">Welcome</string>
+    <string name="name">Name</string>
+    <string name="search">Search</string>
+    <string name="kama">,</string>
+    <string name="stores">Stores</string>
+    <string name="orders">Order</string>
+    <string name="transactions">Transactions</string>
+    <string name="history">History</string>
+    <string name="stations">Water Refilling Stations around you:</string>
+
+    <!--    Profile Strings-->
+    <string name="update_profile">Update Profile</string>
+    <string name="transaction_profile">Transaction History</string>
+    <string name="orders_profile">Orders Processed</string>
+    <string name="store_owner_profile">Become Store Owner</string>
+
+    <!--    Main Strings-->
+    <string name="Logout">Logout</string>
+    <string name="EVENTS_CHANNEL_ID">KamApp</string>
+    <string name="CHANNEL_NEWS">Events</string>
+    <string name="CHANNEL_DESCRIPTION">Get informed with new updates</string>
+    <string name="DEBUG_TAG">LearningPushNotifications</string>
+
+    <integer name="notificationId">1</integer>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="recent_transactions">Recent Transactions</string>
+    <string name="todo">TODO</string>
+
+    <string name="businessowner">Businessowner</string>
+    <string name="customer">Customer</string>
+    <string name="pending_transactions">Pending Transactions</string>
+
+    <string-array name="category">
+        <item>All</item>
+        <item>Mineral</item>
+        <item>Alkaline</item>
+        <item>Distilled</item>
+        <item>Premium</item>
+    </string-array>
+</resources>

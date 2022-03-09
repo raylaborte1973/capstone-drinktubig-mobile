@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/Margin8"
+    android:layout_marginEnd="@dimen/Margin8">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/Margin16"
+        android:layout_marginBottom="@dimen/Margin16">
+
+        <TextView
+            android:id="@+id/transactionStoreName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bacayan Water Station"
+            android:textColor="@color/purple_200"
+            android:layout_marginStart="@dimen/Margin8"
+            android:textSize="@dimen/Text16"/>
+
+        <TextView
+            android:id="@+id/transactionTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="P150.00"
+            android:textColor="@color/black"
+            android:textSize="@dimen/Text16"
+            android:layout_marginStart="@dimen/Margin8"
+            android:layout_marginTop="@dimen/Margin4"
+            android:layout_below="@+id/historyStoreName"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgInfo"
+        android:layout_width="@dimen/Margin30"
+        android:layout_height="@dimen/Margin30"
+        android:src="@drawable/ic_info"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/Margin8"
+        app:tint="@color/black"/>
+
+    <TextView
+        android:id="@+id/transactionDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jun 03, 2021"
+        android:textSize="@dimen/Text14"
+        android:textColor="@color/black"
+        android:layout_toLeftOf="@+id/imgInfo"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/Margin70"/>
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.Home">
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        mapbox:mapbox_cameraTargetLat = "10.385236747055636"
+        mapbox:mapbox_cameraTargetLng = "123.9213113743014"
+        mapbox:mapbox_cameraZoom = "15"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mapDetailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Margin100"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/Margin30"
+        android:layout_marginEnd="@dimen/Margin30"
+        android:layout_marginBottom="@dimen/Margin70"
+        android:visibility="invisible"
+        mapbox:cardElevation="@dimen/Margin10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/Margin8">
+
+            <ImageView
+                android:id="@+id/mapStoreImage"
+                android:layout_width="@dimen/Margin70"
+                android:layout_height="@dimen/Margin70"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/Margin10"
+                android:background="@drawable/curve_edge_black"
+                android:src="@drawable/store_img"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_toEndOf="@id/mapStoreImage"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/Margin8">
+
+                <TextView
+                    android:id="@+id/mapStoreName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Store Name"
+                    android:textSize="@dimen/Text16"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple_200"/>
+
+                <TextView
+                    android:id="@+id/mapStoreLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Barangay Hall Bacayan Sitio Mahusay"
+                    android:layout_marginTop="@dimen/Margin2"
+                    android:textColor="@color/purple_200"/>
+
+                <TextView
+                    android:id="@+id/mapStoreContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="099987654321"
+                    android:layout_marginTop="@dimen/Margin2"
+                    android:textColor="@android:color/black"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

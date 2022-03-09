@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/Margin8"
+        android:layout_marginBottom="@dimen/Margin8"
+        android:layout_marginStart="@dimen/Margin4"
+        android:layout_marginEnd="@dimen/Margin4">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/orderProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/Margin8"
+                android:layout_marginTop="@dimen/Margin2"
+                android:text="25 Liters"
+                android:textColor="@color/purple_200"
+                android:textSize="@dimen/Text22" />
+
+            <TextView
+                android:id="@+id/orderProductCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/Text16"
+                android:text="Distilled"
+                android:layout_below="@+id/orderProductName"
+                android:layout_marginStart="@dimen/Margin8"/>
+
+            <TextView
+                android:id="@+id/orderProductPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25.00"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="@dimen/Text20"
+                android:layout_marginEnd="@dimen/Margin44"
+                android:layout_marginTop="@dimen/Margin8"
+                android:layout_alignParentRight="true"/>
+
+            <ImageView
+                android:layout_width="@dimen/Margin80"
+                android:layout_height="@dimen/Margin80"
+                android:layout_below="@+id/orderProductPrice"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/Margin8"
+                android:layout_marginEnd="@dimen/Margin44"
+                android:src="@drawable/product_image" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

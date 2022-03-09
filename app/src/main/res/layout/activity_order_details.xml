@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.order.OrderDetails">
+
+    <include
+        android:id="@+id/orderDetailsToolbar"
+        layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/Margin24"
+        android:layout_below="@+id/orderDetailsToolbar">
+
+        <ImageView
+            android:id="@+id/imgReceipt"
+            android:layout_width="@dimen/Margin44"
+            android:layout_height="@dimen/Margin44"
+            android:src="@drawable/ic_receipt"
+            app:tint="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction Order Details"
+            android:layout_toRightOf="@+id/imgReceipt"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/Text20"
+            android:layout_marginStart="@dimen/Margin4"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/separator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/layout"
+        android:layout_marginStart="@dimen/Margin10"
+        android:layout_marginEnd="@dimen/Margin10"
+        android:layout_marginBottom="@dimen/Margin10">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Margin10">
+
+            <TextView
+                android:id="@+id/odStoreName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bacayan Water Station"
+                android:textSize="@dimen/Text16"
+                android:textStyle="bold"
+                android:textColor="@color/purple_200"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/odCustName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/odStoreName"
+                android:layout_marginTop="@dimen/Margin8"
+                android:text="Customer Name"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/Text16"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/odDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oct 09, 2021"
+                android:textSize="@dimen/Text14"
+                android:textColor="@color/black"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/odStoreName"
+                android:layout_marginTop="@dimen/Margin8"
+                android:layout_marginEnd="@dimen/Margin24"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/separator2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/separator">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Margin4"
+            android:background="#ddd"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/separator"
+        android:layout_marginTop="@dimen/Margin10"
+        android:layout_marginStart="@dimen/Margin8"
+        android:layout_marginEnd="@dimen/Margin8">
+
+        <TextView
+            android:id="@+id/productDetailsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Products"
+            android:textColor="@color/black"
+            android:layout_marginBottom="@dimen/Margin10"
+            android:textSize="@dimen/Text14"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/odRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/productDetailsLabel"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Margin50"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Amount:"
+            android:textSize="@dimen/Text14"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/Margin20"/>
+
+        <TextView
+            android:id="@+id/odTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="P255.00"
+            android:textSize="@dimen/Text18"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="@dimen/Margin36"/>
+
+        <LinearLayout
+            android:id="@+id/layoutButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/Margin10"
+            android:visibility="invisible"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/odDeclineBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Decline"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_marginEnd="@dimen/Margin20"
+                android:textSize="@dimen/Text16"/>
+
+            <TextView
+                android:id="@+id/odAcceptBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accept"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/Text16"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

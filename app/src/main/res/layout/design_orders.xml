@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/Margin8"
+        android:layout_marginBottom="@dimen/Margin8">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/orderStoreName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/Margin36"
+                android:background="@drawable/corner"
+                android:gravity="center"
+                android:text="Drink Tubig"
+                android:textColor="@color/white"
+                android:textSize="@dimen/Text24" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orderStoreName"
+                android:padding="@dimen/Margin16">
+
+                <TextView
+                    android:id="@+id/orderProdName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/Margin2"
+                    android:text="Product Name"
+                    android:textColor="@color/purple_200"
+                    android:textSize="@dimen/Text20" />
+
+                <TextView
+                    android:id="@+id/orderProdCateg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/orderProdName"
+                    android:layout_marginTop="@dimen/Margin2"
+                    android:text="Product Categ"
+                    android:textSize="@dimen/Text16" />
+
+                <LinearLayout
+                    android:id="@+id/priceLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/orderProdCateg"
+                    android:layout_marginTop="@dimen/Margin2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/priceText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/Margin8"
+                        android:text="Price:"
+                        android:textSize="@dimen/Text16" />
+
+                    <TextView
+                        android:id="@+id/orderPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="P15.00"
+                        android:textColor="@color/purple_200"
+                        android:textSize="@dimen/Text16" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/quantityLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="@dimen/Margin36"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/quantityText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/Margin8"
+                        android:text="Quantity:"
+                        android:textSize="@dimen/Text16" />
+
+                    <TextView
+                        android:id="@+id/orderQuantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textSize="@dimen/Text22" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/totalAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="@dimen/Margin44"
+                    android:layout_marginTop="@dimen/Margin8"
+                    android:layout_below="@+id/quantityLayout"
+                    android:text="P50.00"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="@dimen/Text22" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

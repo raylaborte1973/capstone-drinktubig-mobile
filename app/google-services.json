@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "865738659083",
+    "project_id": "drinktubig-bcaf5",
+    "storage_bucket": "drinktubig-bcaf5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865738659083:android:1109b09ea74098ae0a3e0e",
+        "android_client_info": {
+          "package_name": "com.thesis.drinktubig"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "865738659083-fan71bio11nm2luggtp91qo39ijc184v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAAR0t7cW0GhePHjYxJ_MdIjeYG9lWILE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "865738659083-fan71bio11nm2luggtp91qo39ijc184v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

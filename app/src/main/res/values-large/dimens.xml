@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--    Home Dimensions-->
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">18sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">36sp</dimen>
+
+    <dimen name="Text32">48sp</dimen>
+    <dimen name="Text24">36sp</dimen>
+    <dimen name="Text22">33sp</dimen>
+    <dimen name="Text20">30sp</dimen>
+    <dimen name="Text18">27sp</dimen>
+    <dimen name="Text16">24sp</dimen>
+    <dimen name="Text14">21sp</dimen>
+    <dimen name="Text12">18sp</dimen>
+    <dimen name="Text8">12sp</dimen>
+
+
+    <dimen name="Margin380">570dp</dimen>
+    <dimen name="Margin300">450dp</dimen>
+    <dimen name="Margin250">375dp</dimen>
+    <dimen name="Margin220">330dp</dimen>
+    <dimen name="Margin200">300dp</dimen>
+    <dimen name="Margin180">270dp</dimen>
+    <dimen name="Margin130">195dp</dimen>
+    <dimen name="Margin100">150dp</dimen>
+    <dimen name="Margin80">120dp</dimen>
+    <dimen name="Margin70">105dp</dimen>
+    <dimen name="Margin50">75dp</dimen>
+    <dimen name="Margin44">66dp</dimen>
+    <dimen name="Margin36">54dp</dimen>
+    <dimen name="Margin30">45dp</dimen>
+    <dimen name="Margin26">39dp</dimen>
+    <dimen name="Margin24">36dp</dimen>
+    <dimen name="Margin20">30dp</dimen>
+    <dimen name="Margin16">24dp</dimen>
+    <dimen name="Margin10">15dp</dimen>
+    <dimen name="Margin8">12dp</dimen>
+    <dimen name="Margin4">6dp</dimen>
+    <dimen name="Margin2">3dp</dimen>
+
+
+
+
+
+</resources>

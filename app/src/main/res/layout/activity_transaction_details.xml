@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.transactions.TransactionDetails">
+
+    <include
+        android:id="@+id/transactionDetailsToolbar"
+        layout="@layout/toolbar"/>
+
+<!--    Transaction Details Header-->
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/Margin24"
+        android:layout_below="@+id/transactionDetailsToolbar">
+
+        <ImageView
+            android:id="@+id/imgReceipt"
+            android:layout_width="@dimen/Margin44"
+            android:layout_height="@dimen/Margin44"
+            android:src="@drawable/ic_receipt"
+            app:tint="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction Details"
+            android:layout_toRightOf="@+id/imgReceipt"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/Text20"
+            android:layout_marginStart="@dimen/Margin4"/>
+
+    </RelativeLayout>
+
+<!--    First Separator-->
+    <LinearLayout
+        android:id="@+id/separator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/layout"
+        android:layout_marginStart="@dimen/Margin10"
+        android:layout_marginEnd="@dimen/Margin10">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Margin16"
+            android:layout_marginBottom="@dimen/Margin16">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Amount:"
+                android:textSize="@dimen/Text14"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/Margin20"/>
+
+            <TextView
+                android:id="@+id/tdTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P255.00"
+                android:textSize="@dimen/Text16"
+                android:textColor="@color/black"
+                android:layout_marginEnd="@dimen/Margin36"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+<!--    Second Separator-->
+    <LinearLayout
+        android:id="@+id/separator2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/separator">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Margin4"
+            android:background="#ddd"/>
+    </LinearLayout>
+
+<!--    Details-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/separator"
+        android:layout_marginTop="@dimen/Margin10"
+        android:layout_marginStart="@dimen/Margin8"
+        android:layout_marginEnd="@dimen/Margin8">
+
+        <TextView
+            android:id="@+id/tdCustName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Name"
+            android:textColor="@color/purple_500"
+            android:textSize="@dimen/Text16"
+            android:textStyle="bold"
+            android:layout_below="@+id/tdStoreName"
+            android:layout_marginTop="@dimen/Margin8"/>
+
+        <TextView
+            android:id="@+id/tdStoreName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bacayan Water Station"
+            android:textSize="@dimen/Text16"
+            android:textStyle="bold"
+            android:textColor="@color/purple_200"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/tdDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oct 09, 2021"
+            android:textSize="@dimen/Text14"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tdStoreName"
+            android:layout_marginEnd="@dimen/Margin16"
+            android:layout_marginTop="@dimen/Margin8"/>
+
+        <TextView
+            android:id="@+id/productDetailsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Products"
+            android:textColor="@color/black"
+            android:textSize="@dimen/Text12"
+            android:layout_below="@+id/tdCustName"
+            android:layout_marginTop="@dimen/Margin10"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tdRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/productDetailsLabel"
+            android:layout_marginBottom="@dimen/Margin130"
+            android:layout_marginTop="@dimen/Margin8"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Margin130"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/Margin16">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/tdStatusLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction Status"
+            android:textColor="@color/black"
+            android:textSize="@dimen/Text18"
+            android:layout_marginStart="@dimen/Margin8"/>
+
+        <TextView
+            android:id="@+id/tdOnProcess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Processed"
+            android:textSize="@dimen/Text16"
+            android:textColor="@color/black"
+            android:layout_below="@+id/tdStatusLabel"
+            android:layout_marginStart="@dimen/Margin44"
+            android:layout_marginTop="@dimen/Margin8"
+            android:drawableStart="@drawable/ic_check_circle_covered"
+            android:drawablePadding="@dimen/Margin8"/>
+
+        <TextView
+            android:id="@+id/tdReceived"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Received"
+            android:textSize="@dimen/Text16"
+            android:textColor="@color/black"
+            android:layout_below="@+id/tdOnProcess"
+            android:layout_marginStart="@dimen/Margin44"
+            android:layout_marginTop="@dimen/Margin8"
+            android:drawableStart="@drawable/ic_check_circle_covered"
+            android:drawablePadding="@dimen/Margin8"/>
+
+        <Button
+            android:id="@+id/tdReceivedBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Set Status \nReceived"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/Margin30"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
